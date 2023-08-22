@@ -10,7 +10,6 @@ i=0
 a=0
 str1=""
 str2=""
-lista2=[]
 while i<=2:
     ekakoodi = random.randint(0,9)
     str(ekakoodi)
@@ -21,6 +20,5 @@ while a<=3:
     str(tokakoodi)
     str2+=str(tokakoodi) + ", "
     a+= 1
-str(lista2)
 print(str1)
 print(str2)
