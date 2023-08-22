@@ -1,2 +1,2 @@
-name = input("Mikä on nimesi?")
+name = input("Mikä on nimesi? ")
 print("Terve, " + name + "!")
