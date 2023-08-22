@@ -19,33 +19,11 @@ print(naulacounter)
 print(leiviskacounter)'''
 
 result= leiviskacounter + naulacounter + luoticounter
-kg = int(result)/2
-g= result % 1000
+print(result)
+kg = int(result/1000)
+g= round(result % 1000, 2)
 
 print(kg)
 print(g)
 
-'''yhteispainogr = luoticounter+naulacounter+leiviskacounter
-print(yhteispainogr)
-painolista=list(str(yhteispainogr))
-print(painolista)
-#print(len(painolista))
-length=len(painolista)
-print(painolista)
-index = painolista.index(".")
-#print(index)
-if len(painolista)>=3:
-    i=0
-    #print(painolista[i])
-    uusilista=[]
-    uusilista.append(painolista[i])
-    painolista = painolista.pop()[i]
-    i+=1'''
-'''else:
-    i=0
-    print(painolista[i])
-    i-=1
-print(str(uusilista))'''
-
-'''print(painolista[idx-3] + painolista[idx-2] + painolista[idx-1]+ painolista[idx] + painolista[idx+1])
-print(painolista[0] + painolista[1]))'''
+print("Massa nykymittojen mukaan:" +"\n" + str(kg) + " kilogrammaa ja " + str(g) + " grammaa.")
