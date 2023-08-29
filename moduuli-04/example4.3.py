@@ -15,3 +15,4 @@ while num1 != " ":
         num1 = float(input("anna luku, mikäli haluat lopettaa, anna tyhjä lopetusmerkki"))
     while num2<=num1<=num3:
          num1 = float(input("anna luku, mikäli haluat lopettaa, anna tyhjä lopetusmerkki"))
+
