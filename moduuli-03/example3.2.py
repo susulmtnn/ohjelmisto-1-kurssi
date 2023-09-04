@@ -12,6 +12,8 @@ hytclas = input("Syötä hyttiluokka")
 
 if hytclas == "A":
     print("A on ikkunallinen hytti autokannen yläpuolella.")
+elif hytclas == "LUX":
+    print("LUX on parvekkeellinen hytti yläkannella.")
 elif hytclas == "B":
     print("B on ikkunaton hytti autokannen yläpuolella.")
 elif hytclas == "C":
