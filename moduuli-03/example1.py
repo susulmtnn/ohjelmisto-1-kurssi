@@ -8,8 +8,8 @@ fishlen = float(input("Anna kuhan pituus senttimetreinä"))
 
 
 
-if fishlen<32:
+if fishlen<37:
     print("Päästä kuha takaisin järveen. Mitasta puuttuu " +str(37-fishlen) + " cm.")
 
-if fishlen>32:
+if fishlen>=37:
     print("Kuhan pituus on " + str(fishlen) + " cm voit pitää kuhan.")
