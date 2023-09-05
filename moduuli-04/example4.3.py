@@ -18,5 +18,5 @@ while num1 != " ":
     while type(num1)!= str and num2<=num1<=num3:
          num1 = input("anna luku, mikäli haluat lopettaa, anna tyhjä lopetusmerkki")
 while num1 == " ":
-    print("pienin luku: " + str(num2) + "ja suurin luku: " + str(num3))
+    print("pienin luku: " + str(num2) + " ja suurin luku: " + str(num3))
     break
