@@ -9,8 +9,8 @@ user_input = input("Anna lukuja. Jos haluat tulostaa viisi suurinta, anna tyhjä
 
 lista = []
 
-while user_input != " ":
+while user_input != "":
     lista.append(int(user_input))
-    user_input = input("Anna lukuja. Jos haluat tulostaa viisi suurinta, anna tyhjä")
+    user_input = input("Anna lukuja. Jos haluat tulostaa viisi suurinta, anna enter")
 lista.sort(reverse=True)
 print(lista[0:5])
