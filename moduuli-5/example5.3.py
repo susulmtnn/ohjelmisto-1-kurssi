@@ -12,7 +12,6 @@ for x in range(2, user_input):
     if user_input % x ==0:
         isPrime = False
         #print("Luku ei ole alkuluku")
-        break
 #print("Luku on alkuluku")
 if isPrime:
     print(f"Luku {user_input} on alkuluku")
