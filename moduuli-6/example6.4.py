@@ -8,7 +8,7 @@ def fc_sum_it(lista):
     return sum(lista)
 
 def main():
-    lista= random.sample(range(10, 30), 5)
+    #lista= random.sample(range(10, 30), 5)
     print(lista)
     print(fc_sum_it(lista))
 
