@@ -7,12 +7,13 @@ Kirjoita testausta varten pääohjelma, jossa luot listan, kutsut funktiota ja t
 import random
 
 def fc_remove_odd_numbers(lista):
+    lista1 = lista
     lista2 = []
     for i in lista:
             if i % 2 == 0:
                 lista2.append(i)
             else: continue
-    return lista2
+    return lista2, lista1
 
 
 def main():
