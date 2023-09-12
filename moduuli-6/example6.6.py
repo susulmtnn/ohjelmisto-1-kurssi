@@ -20,7 +20,7 @@ def fc_pizza_price(price1, diameter1, price2, diameter2):
     elif final_price2 > final_price1:
         return f"eka pitsa hinnalla {final_price1} e\m^2"
     else:
-        return final_price1, final_price2
+        return f" molemmat pitsat hinnalla {final_price1}  e\m^2"
 
 
 def main():
