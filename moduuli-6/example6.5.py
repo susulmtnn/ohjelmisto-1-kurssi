@@ -13,13 +13,14 @@ def fc_remove_odd_numbers(lista):
             if i % 2 == 0:
                 lista2.append(i)
             else: continue
-    return lista2, lista1
+    return lista2
 
 
 def main():
     lista = random.sample(range(10, 30), 5)
     #print(lista)
-    print(fc_remove_odd_numbers(lista))
+    fc_remove_odd_numbers(lista)
+    print(f"tässä alkuperäinen lista {lista}. Tässä toinen lista {fc_remove_odd_numbers(lista)}")
 
 
 main()
