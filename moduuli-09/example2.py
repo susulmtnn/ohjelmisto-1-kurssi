@@ -15,7 +15,7 @@ class Auto:
         #print(f"New car. Register plate: {self.registerplate}. Current speed: {self.cur_speed} km/h. Max speed: {self.maxi_speed}")
 
     def initialize_auto(self):
-        print(f"New car. Register plate: {self.registerplate}. Current speed: {self.cur_speed} km/h. Max speed: {self.maxi_speed}")
+        print(f"This is your car. Register plate: {self.registerplate}. Current speed: {self.cur_speed} km/h. Max speed: {self.maxi_speed}")
 
     def accelerate(self, num):
         if self.cur_speed + num < 0:
