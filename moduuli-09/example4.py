@@ -9,6 +9,7 @@ Kaikkia autoja käsketään liikkumaan yhden tunnin ajan. Tämä tehdään kutsu
 Kilpailu jatkuu, kunnes jokin autoista on edennyt vähintään 10000 kilometriä. Lopuksi tulostetaan
  kunkin auton kaikki ominaisuudet selkeäksi taulukoksi muotoiltuna.'''
 
+import numpy as np
 import random
 class Auto:
     def __init__(self, registerplate, maxi_speed):
@@ -41,11 +42,16 @@ autot = []
 for i in range(10):
     new_auto = Auto(f"ABC-{i}", random.randint(100, 200))
     autot.append(new_auto)
-a=0
-while autot[a].km_travelled < 1000:
-    if
-        a += 1
+while autot[i].km_travelled <1000:
     for auto in autot:
         auto.accelerate(random.randint(-10, 15))
         auto.kulje(1)
-        print(f"tämän auton nimi: {auto.registerplate} ja nopeus {auto.cur_speed} ja kuljettu matka {auto.km_travelled}")
+        if auto.km_travelled <1000:
+            continue
+            #print(f"tämän auton nimi: {auto.registerplate} ja nopeus {auto.cur_speed} ja kuljettu matka {auto.km_travelled}")
+        else:
+            #print(f"finished. The winner is {auto.registerplate} ja nopeus {auto.cur_speed} ja kuljettu matka {auto.km_travelled}")
+            print("The race is finished. Here's the final data:")
+            for auto in autot:
+                print(f"Register plate: {auto.registerplate}. Current speed: {auto.cur_speed}. Max. speed: {auto.maxi_speed}. Km traveled: {auto.km_travelled}")
+            quit()
