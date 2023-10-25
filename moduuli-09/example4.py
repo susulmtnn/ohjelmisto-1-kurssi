@@ -42,11 +42,11 @@ autot = []
 for i in range(10):
     new_auto = Auto(f"ABC-{i}", random.randint(100, 200))
     autot.append(new_auto)
-while autot[i].km_travelled <1000:
+while autot[i].km_travelled <10000:
     for auto in autot:
         auto.accelerate(random.randint(-10, 15))
         auto.kulje(1)
-        if auto.km_travelled <1000:
+        if auto.km_travelled <10000:
             continue
             #print(f"tämän auton nimi: {auto.registerplate} ja nopeus {auto.cur_speed} ja kuljettu matka {auto.km_travelled}")
         else:
