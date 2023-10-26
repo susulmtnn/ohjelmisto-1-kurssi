@@ -50,7 +50,7 @@ class House:
         self.target_floor = target
         self.current_location = self.elevators_list[nbr-1].location
         print(f"So you wish to drive the elevator {nbr}. Target floor is {self.target_floor}. Current floor is {self.elevators_list[nbr-1].location}")
-        self.elevators_list[nbr].travel_to_floor(target)
+        self.elevators_list[nbr-1].travel_to_floor(target)
 
 
 
