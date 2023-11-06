@@ -23,4 +23,5 @@ try:
     celsius = kelvins -273.15
     print(round(celsius, 2))
 except:
-    print(error)
+    print("error")
+    exit()
