@@ -24,8 +24,8 @@ def get_ICAO(icao):
     cursor.execute(sql)
     result = cursor.fetchone()
     if result:
-        print(result)
-        print(type(result))
+        #print(result)
+        #print(type(result))
         return result
     else:
         return 'not_found', 'not_found'

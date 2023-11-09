@@ -11,15 +11,15 @@ def get_root():
     return "Moro maailma!"
 
 
-@app.route('/kentta/<icao>')
+@app.route('/kenttä/<icao>')
 def multiply(icao):
 
     try:
-        kentta, kaupunki = tietokantahaku.get_ICAO(icao)
+        kenttä, kaupunki = tietokantahaku.get_ICAO(icao)
         status_code = 200
         response_data = {
             "ICAO": icao,
-            "Name": kentta,
+            "Name": kenttä,
             "Municipality": kaupunki
         }
 
@@ -51,4 +51,4 @@ def page_not_found(virhekoodi):
 
 
 if __name__ == '__main__':
-    app.run(use_reloader=True, host='127.0.0.1', port=5000)
+    app.run(use_reloader=True, host='127.0.0.1', port=3000)
